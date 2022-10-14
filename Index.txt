@@ -11,3 +11,12 @@
 • Parameters and arguments
 • The sleep() function
 
+5-hangman
+
+• ASCII art
+• Lists
+• The in operator
+• Methods
+• The split(), lower(), upper(), startswith(), and endswith() string 
+methods
+• elif statements
