@@ -1,4 +1,5 @@
 2-guessTheNumber
+
 •    Expressions are values connected by operators. Expressions are all 
 evaluated down to a single value. For example, 2 + 2 evaluates to 4 or 
 'Hello' + ' ' + 'World' evaluates to 'Hello World'. When expressions are 
@@ -12,3 +13,26 @@ out of loops. Function calls also change the flow of execution by jumping to the
 •	 The print() and input() functions display text on the screen and get 
 text from the keyboard. Instructions that deal with the input and output
 of the program are called I/O (pronounced eye oh).  
+
+3
+
+Escape character What is actually printed
+\\                  Backslash (\)
+\'                  Single quote (')
+\"                  Double quote (")
+\n                  Newline
+\t                  Tab
+
+The print() function automatically appends a newline character to the 
+end of a string. Most of the time, this is a helpful shortcut. But sometimes 
+you don’t want a newline character. To change this, you can pass a blank 
+string as the keyword argument for print()’s end keyword parameter. For 
+example, to print spam to the screen without a newline character, you would 
+call print('spam', end='')
+
+
+4
+
+time.sleep(2) // will wait for 2 seconds
+random.randint(1, 2) // will randomly select 1 or 2
+

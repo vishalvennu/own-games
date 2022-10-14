@@ -1,0 +1,13 @@
+4-dragonRealm
+
+• Flowcharts
+• Creating your own functions with the def keyword
+• Multiline strings
+• while statements
+• The and, or, and not Boolean operators
+• Truth tables
+• The return keyword
+• Global and local variable scope
+• Parameters and arguments
+• The sleep() function
+
