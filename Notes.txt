@@ -1,0 +1,14 @@
+2-guessTheNumber
+•    Expressions are values connected by operators. Expressions are all 
+evaluated down to a single value. For example, 2 + 2 evaluates to 4 or 
+'Hello' + ' ' + 'World' evaluates to 'Hello World'. When expressions are 
+next to the if and for keywords, you can also call them conditions.
+•	 Assignment statements store values in variables so you can remember 
+the values later in the program.
+Guess the Number 37
+•	 The if, for, and break statements are flow control statements that can 
+make the execution skip instructions, loop over instructions, or break 
+out of loops. Function calls also change the flow of execution by jumping to the instructions inside of a function.
+•	 The print() and input() functions display text on the screen and get 
+text from the keyboard. Instructions that deal with the input and output
+of the program are called I/O (pronounced eye oh).  

@@ -2,4 +2,5 @@
     print ('It is good to meet you ' + input() + '!') //integrate functions into print statements
 2-guessTheNumber
     Use Range instead of incrementing a variable in looping (i,j)
+    The difference between = and == // = is used for assignment; == is used for comparison 
     
