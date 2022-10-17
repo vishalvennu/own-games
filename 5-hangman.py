@@ -54,12 +54,10 @@ def getRandomWord(wordsList):
 def displayGame(letter, secretWord, missedLetters, eval):
 
   if letter not in list(secretWord):
-        missedLetters = missedLetters + list(letter)
+        missedLetters = missedLetters + list(letter) # or missedLetters.append(letter)
 
   print (secretWord)
   print (hangmanPics[len(missedLetters)])
-
-  
 
   for i in range(len(secretWord)):
     if letter == secretWord[i]:
@@ -68,28 +66,24 @@ def displayGame(letter, secretWord, missedLetters, eval):
       print ("You won!")
       break
   
-  
   print (eval)
   print ('missed letters:', end="")
   print (missedLetters) 
-
-  
-    # chances = len(missedLetters)
-    # print (hangmanPics[chances])
     
-
   return (eval, missedLetters)
 
-    
 
 missedLetters=[]
 secretWord = getRandomWord(wordsList)
 eval = "_"*len(secretWord)
+print(eval)
 
 while (len(missedLetters) <= 6):
   letter = input()
   if(letter in missedLetters):
-    print ("Already entered; Try a different alphabet.")
+    print (f"Already entered {letter}; Try a different alphabet.")
     continue
   
   eval, missedLetters = displayGame(letter, secretWord, missedLetters, eval)
+
+print ("You lost!")

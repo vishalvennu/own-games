@@ -36,3 +36,17 @@ call print('spam', end='')
 time.sleep(2) // will wait for 2 seconds
 random.randint(1, 2) // will randomly select 1 or 2
 
+5 - Hangman
+
+# Lists are ordered.
+>>> listFavs1 = ['apples', 'cats', 42] 
+>>> listFavs2 = ['cats', 42, 'apples'] 
+>>> listFavs1 == listFavs2
+False
+
+#Dictionaries are unordered.
+>>> favorites1 = {'fruit':'apples', 'number':42, 'animal':'cats'} 
+>>> favorites2 = {'animal':'cats', 'number':42, 'fruit':'apples'} 
+>>> favorites1 == favorites2
+True
+
