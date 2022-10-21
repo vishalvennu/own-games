@@ -10,7 +10,7 @@ def displayIntro():
  
 def chooseCave():
     cave = ''
-    while cave != '1' and cave != '2':
+    while cave not in ['1', '2']:
         print('Which cave will you go into? (1 or 2)')
         cave = input()
 
@@ -35,7 +35,7 @@ def checkCave(chosenCave):
     return
 
 playAgain = 'yes'
-while playAgain == 'yes' or playAgain == 'y':
+while playAgain in {'yes', 'y'}:
     displayIntro()
 
     caveNumber = chooseCave()
