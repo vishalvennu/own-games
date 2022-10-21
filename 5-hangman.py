@@ -51,7 +51,7 @@ wordsList = "mark peasant lake asylum positive ally thick pursuit back charismat
 def getRandomWord(wordsList):
     return (wordsList[random.randint(0,len(wordsList)-1)])
 
-def displayGame(letter, secretWord, missedLetters, eval):
+def displayGame(letter, secretWord, missedLetters, final):
 
   if letter not in list(secretWord):
         missedLetters = missedLetters + list(letter) # or missedLetters.append(letter)
@@ -61,22 +61,22 @@ def displayGame(letter, secretWord, missedLetters, eval):
 
   for i in range(len(secretWord)):
     if letter == secretWord[i]:
-      eval = eval[:i] + secretWord[i] + eval[i+1:]
-    if('_' not in eval):
+      final = final[:i] + secretWord[i] + final[i+1:]
+    if('_' not in final):
       print ("You won!")
       break
   
-  print (eval)
+  print (final)
   print ('missed letters:', end="")
   print (missedLetters) 
     
-  return (eval, missedLetters)
+  return (final, missedLetters)
 
 
 missedLetters=[]
 secretWord = getRandomWord(wordsList)
-eval = "_"*len(secretWord)
-print(eval)
+final = "_"*len(secretWord)
+print(final)
 
 while (len(missedLetters) <= 6):
   letter = input()
@@ -84,6 +84,6 @@ while (len(missedLetters) <= 6):
     print (f"Already entered {letter}; Try a different alphabet.")
     continue
   
-  eval, missedLetters = displayGame(letter, secretWord, missedLetters, eval)
+  final, missedLetters = displayGame(letter, secretWord, missedLetters, final)
 
 print ("You lost!")
